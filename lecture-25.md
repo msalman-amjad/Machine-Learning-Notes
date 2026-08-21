@@ -111,9 +111,7 @@ print(X_scaled)
 * **Tall & Skinny Contours:** Geometric distortion of cost functions caused by unscaled features, leading to inefficient gradient descent trajectories.
 * **Direct Convergence:** Symmetric cost contours created by feature scaling enable gradient descent to step straight to the global minimum.
 
-### Summary Checklist:
-- [x] Defined feature scaling and explained why raw feature ranges cause slow convergence.
-- [x] Derived the parameter weight imbalance relationship $w_1 x_1$ vs. $w_2 x_2$.
-- [x] Analyzed cost function contour plots (narrow ellipses vs. symmetric circles).
-- [x] Implemented NumPy feature scaling logic in Python.
-- [x] Stripped out all video timestamps and replaced "video" with "lecture" throughout the text.
+### Key Takeaways:
+* **Feature Scaling Accelerates Convergence:** Scaling features to comparable ranges (e.g., $0 \le x_j \le 1$) transforms elongated cost contours into symmetric circles, allowing gradient descent to converge much faster.
+* **Prevents Parameter Imbalance:** Prevents situations where weight parameters operate on vastly different scales due to feature range disparities.
+* **Direct Optimization Path:** Enables parameter updates to point directly toward the global minimum rather than oscillating back and forth.

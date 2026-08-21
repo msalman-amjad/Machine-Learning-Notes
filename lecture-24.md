@@ -222,8 +222,7 @@ def gradient_descent(X, y, w_in, b_in, alpha, num_iters):
 * **Feature Scaling Preview:** When features differ vastly in scale (e.g., house size in sq ft: $1,000–5,000$ vs. number of bedrooms: $1–5$), gradient descent can take a long time to converge due to elongated cost contours. Scaling features ensures uniform gradient steps.
 * **Learning Rate Selection Preview:** Choosing an appropriate $\alpha$ is critical. If $\alpha$ is too small, convergence is slow; if $\alpha$ is too large, gradient descent may overshoot and diverge.
 
-### Summary Checklist:
-- [x] Model prediction formula: $f_{\vec{w},b}(\vec{x}) = \vec{w} \cdot \vec{x} + b$
-- [x] Cost function evaluated using Mean Squared Error over $m$ examples.
-- [x] Parameter update rule vectorized: $\vec{w} = \vec{w} - \alpha \vec{d}_{\vec{w}}$.
-- [x] Normal Equation provides direct one-step math, but scales poorly ($O(n^3)$) and lacks algorithm versatility.
+### Key Takeaways:
+* **Vectorized Prediction & Updates:** Multiple linear regression leverages vector dot products $f_{\vec{w},b}(\vec{x}) = \vec{w} \cdot \vec{x} + b$ and simultaneous vector gradient updates $\vec{w} = \vec{w} - \alpha \vec{d}_{\vec{w}}$ for maximum computational efficiency.
+* **Simultaneous Parameter Updates:** Always update weight vector $\vec{w}$ and scalar bias $b$ concurrently using gradients computed from the same step iteration.
+* **Normal Equation Trade-Offs:** Provides a direct, non-iterative solution $(\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{y}$, but suffers from $O(n^3)$ matrix inversion complexity and does not generalize to non-linear algorithms.

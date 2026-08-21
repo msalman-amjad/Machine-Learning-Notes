@@ -115,9 +115,7 @@ print(f"Predicted Output: {predicted_price:.2f}")
 | **Logic Source** | Explicit, hand-coded rules written by engineers | Autonomous learning from historical data |
 | **Best Suited For** | Deterministic tasks (e.g., GPS shortest path) | Complex, perceptual tasks (e.g., vision, speech, diagnosis) |
 
-### Summary Checklist:
-- [x] Contextualized why machine learning surpasses explicit programming for complex perceptual problems.
-- [x] Analyzed global economic impact ($13T annual value by 2030) across healthcare, agriculture, retail, and manufacturing.
-- [x] Clarified the distinction between current Narrow AI and future AGI.
-- [x] Formulated cost function $J(w,b)$ and implemented vectorized prediction function `predict(x, w, b)` with NumPy.
-- [x] Stripped out all video timestamps and replaced "video" with "lecture" everywhere.
+### Key Takeaways:
+* **ML vs. Explicit Programming:** Machine learning enables computers to solve complex perceptual problems (speech, vision, autonomous driving) that are impossible to hardcode manually.
+* **Massive Economic Impact:** Projected to contribute $\$13\text{ Trillion}$ annually to the global economy by 2030 across healthcare, retail, manufacturing, and agriculture.
+* **Narrow AI Focus:** Practical commercial AI is focused on Narrow AI (task-specific excellence), while Artificial General Intelligence (AGI) remains a long-term goal.

@@ -113,9 +113,7 @@ print(f"Predicted Price: ${predicted_price:.1f}k (${predicted_price * 1000:,.2f}
 * **Linear vs. Non-Linear Models:** Straight-line models $f(x) = wx + b$ vs. curved polynomial models to capture complex data relationships.
 * **Economic Value:** Powers ~99% of current commercial AI applications across online search, advertising, translation, speech recognition, and medical imaging.
 
-### Summary Checklist:
-- [x] Defined supervised learning and input-to-output mapping $x \rightarrow y$.
-- [x] Surveyed real-world commercial applications.
-- [x] Formulated linear regression equations and continuous output definition.
-- [x] Implemented Python code snippet for housing price predictions.
-- [x] Removed all video timestamps and replaced "video" with "lecture" throughout the text.
+### Key Takeaways:
+* **Supervised Learning Dominance:** Maps inputs $x$ to labeled targets $y$, powering nearly all modern commercial AI systems.
+* **Continuous Value Predictions:** Linear regression fits functions $f_{w,b}(x) = wx + b$ to predict continuous numerical targets.
+* **Model Versatility:** Linear and non-linear polynomial regression allow fitting complex real-world data distributions.

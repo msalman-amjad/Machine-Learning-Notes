@@ -129,10 +129,7 @@ print(f"Patient 2 (Size: 4.5 cm, Age: 50): {label2} (Class {id2})")
 
 ## 6. Key Terminology & Takeaways
 
-### Summary Checklist:
-- [x] Defined **Classification** and distinguished discrete outputs from continuous regression outputs.
-- [x] Formulated binary target coding $y \in \{0, 1\}$ (Negative vs. Positive classes).
-- [x] Derived the decision boundary equation $z = \vec{w} \cdot \vec{x} + b \ge 0$.
-- [x] Explained feature space expansion (1D to multi-dimensional vectors).
-- [x] Provided clean Python code implementing threshold decision logic with NumPy.
-- [x] Stripped out all video timestamps and replaced "video" with "lecture" throughout the text.
+### Key Takeaways:
+* **Discrete Category Predictions:** Classification focuses on predicting discrete class labels $y \in \{0, 1\}$ (or multi-class $\{0, 1, \dots, K-1\}$) rather than continuous numbers.
+* **Decision Boundary Concept:** Algorithms learn a geometric decision boundary $z = \vec{w} \cdot \vec{x} + b = 0$ separating positive and negative class instances in feature space.
+* **Feature Vector Flexibility:** Works across numeric metrics, multi-dimensional feature vectors, and non-numeric data structures like image pixel arrays.

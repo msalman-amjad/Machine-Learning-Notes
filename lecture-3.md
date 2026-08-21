@@ -127,8 +127,7 @@ print(f"Cost J(w, b) with initial parameters: {cost:.2f}")
 * **Supervised vs. Unsupervised:** Supervised ML uses labeled input-output pairs $(x, y)$; Unsupervised ML discovers patterns in unlabeled data ($x$ only).
 * **Practical Mastery:** Successful AI application requires mastering diagnostic techniques, parameter tuning, and problem formulation—not just memorizing algorithm math.
 
-### Summary Checklist:
-- [x] Documented Arthur Samuel's historical checkers program analogy.
-- [x] Outlined the main categories of ML (Supervised, Unsupervised, Recommender Systems, Reinforcement Learning).
-- [x] Formulated cost function $J(w,b)$ and implemented code evaluation in NumPy.
-- [x] Removed all video timestamps and replaced "video" with "lecture" throughout the text.
+### Key Takeaways:
+* **Definition of Machine Learning:** The field of study giving computers the ability to learn autonomously from data and experience without explicit programming.
+* **Core ML Categories:** Supervised Learning (labeled pairs $(x, y)$), Unsupervised Learning (unlabeled data $x$), Recommender Systems, and Reinforcement Learning.
+* **Importance of Practical Skill:** Knowing mathematical algorithms is only half the task; practical execution, diagnostic debugging, and hyperparameter selection determine real-world success.
