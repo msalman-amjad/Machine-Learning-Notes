@@ -57,6 +57,30 @@ Consider predicting whether a breast tumor is benign or malignant:
 * **Single Feature ($x_1$):** If we plot tumor size along a 1D line, the algorithm finds a threshold (e.g., size $\ge 3\text{ cm}$) separating benign tumors ($0$) from malignant tumors ($1$).
 * **Two Features ($x_1, x_2$):** By plotting tumor size ($x_1$) against patient age ($x_2$) on a 2D grid, the decision boundary becomes a line separating positive data points (red crosses) from negative data points (blue circles).
 
+---
+
+### Visual Decision Boundary Diagrams
+
+```text
+1D Decision Boundary (Single Feature x1: Tumor Size)
+  o   o   o   o  |  x   x   x   x   (o = Benign y=0,  x = Malignant y=1)
+-----------------+-----------------> x1 (Tumor Size in cm)
+                 3.0 cm (Threshold Boundary z = 0)
+
+2D Linear Decision Boundary (Two Features: Tumor Size x1 vs Patient Age x2)
+  Patient Age (x2)
+   ^
+   |      o        o    /   x         x
+   |    o    o    o    /        x   x      <-- Decision Boundary Line:
+   |      o    o      /   x       x          z = w1*x1 + w2*x2 + b = 0
+   |   o    o    o   /   x    x     x
+   |  o   o   o     /   x   x    x
+   +---------------+-----------------------> Tumor Size (x1)
+                   (Linear Separation)
+```
+
+---
+
 ### 2. Multi-Class Classification:
 Classification is not restricted to binary ($0/1$) outcomes. **Multi-class classification** handles datasets with $K > 2$ categories:
 * Diagnosing tumor types into Class $0$ (Benign), Class $1$ (Type A Malignant), or Class $2$ (Type B Malignant).

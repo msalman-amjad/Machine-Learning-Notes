@@ -50,6 +50,24 @@ $$J(w, b) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right
 
 ---
 
+### Visual Cost Function Curve $J(w)$
+
+```text
+  Cost J(w)
+    ^
+    |  *                                 *
+    |   \                               /   <-- Parabolic MSE Bowl Shape
+    |    \                             /        J(w, b) = (1/2m) * sum((f(x) - y)^2)
+    |     \                           /
+    |      *                         *
+    |       \                       /
+    |        \                     /
+    |         *-------------------*  <-- Global Minimum: J(w) is minimized
+    +-----------------------------------------> Weight Parameter (w)
+```
+
+---
+
 ## 3. Industry Impact, Economic Value & AGI
 
 ### Real-World AI Systems & Projects:

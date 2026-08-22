@@ -46,6 +46,22 @@ This disparity severely distorts the geometry of the cost function $J(w_1, w_2, 
 
 ---
 
+### Visual Contour Plot & Gradient Descent Trajectory Comparison
+
+```text
+Unscaled Features (Tall & Skinny Contours)        Scaled Features (Symmetric / Circular Contours)
+       w2                                                w2
+       ^                                                 ^
+       |     /---------\                                 |       /-----\
+       |    /  /-----\  \                                |      / .---. \
+       |   |  |   x   |  |  <-- Oscillates back & forth  |     ( (  x  ) )  <-- Direct trajectory
+       |    \  \-----/  /       perpendicular to min     |      \ '---' /      straight to min
+       |     \---------/                                 |       \-----/
+       +-------------------> w1                          +-------------------> w1
+```
+
+---
+
 ## 3. Comparison: Unscaled vs. Scaled Features
 
 | Aspect | Unscaled Features | Scaled Features |
